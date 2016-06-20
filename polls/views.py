@@ -7,8 +7,6 @@ from django.http import Http404
 from django.core.urlresolvers import reverse
 from django.views import generic
 
-
-
 # def index(request):
 #     print "Enter Index Function"
 #     latest_question_list = Question.objects.order_by('-pub_date')[:5]
@@ -40,8 +38,6 @@ from django.views import generic
 #     question = get_object_or_404(Question, pk=question_id)
 #     print "Exit Results Function"
 #     return render(request, 'polls/results.html', {'question': question})
-
-
 
 class IndexView(generic.ListView):
     template_name = 'polls/index.html'
